@@ -1,0 +1,57 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0
+}
+body{
+  border-radius: 8px;
+  max-width: 1920px;
+  font-family:"楷体";
+	background: url(/file/image/1.png)
+}
+a{
+  color: aliceblue;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+.nav ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav{
+  margin: 50px 200px;
+}
+.navli {
+  float: left;
+  font-size: 25px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.logo{
+  white-space: nowrap;
+  float: left;
+  font-size: 25px;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
