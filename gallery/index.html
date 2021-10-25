@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:lr="http://adobe.com/lrg/0.0"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>鸽子之家画廊</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" title="Custom Settings" href="assets/css/custom.css" >
+        <script src="assets/js/libs/modernizr.custom.23122.js"></script>
+    </head>
+    <body class="" data-pagination-style="scroll" data-pagination-size="20">
+                        <div id="thumbnailContainer">
+            <div class="thumbnails thumbnail-size-md"></div>
+        </div>
+        <div id="loupeContainer" class="show-corners">
+            <div class="background"></div>
+            <div class="image-container"></div>
+            <div class="side-navigation">
+                <div class="hotspot" id="hotspotPrevLoupe">
+                    <div class="button" id="buttonPrevSideLoupe">
+                        <svg version="1.1" id="svgIconPrevSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 57" style="enable-background:new 0 0 30 57;" xml:space="preserve">
+                            <path class="icon custom-colorable" d="M0,0v57c16.56854,0,30-12.75989,30-28.5S16.56854,0,0,0z M17.60291,33.87964
+                                c0.34692,0.3291,0.34998,0.85938,0.00708,1.18457l-1.2431,1.17828c-0.34326,0.32532-0.90277,0.32245-1.24969-0.00647
+                                L9.53137,30.9408L7,28.54163l8.20038-7.77301c0.35333-0.33508,0.92334-0.33801,1.27271-0.00671l1.26569,1.19952
+                                c0.34943,0.3313,0.34613,0.8714-0.00739,1.2063l-5.7149,5.41711L17.60291,33.87964z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hotspot" id="hotspotNextLoupe">
+                    <div class="button" id="buttonNextSideLoupe">
+                        <svg version="1.1" id="svgIconNextSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 57" style="enable-background:new 0 0 30 57;" xml:space="preserve">
+                            <path class="icon custom-colorable" d="M30,57V0C13.43146,0,0,12.75989,0,28.5S13.43146,57,30,57z M12.39709,23.12036
+                                c-0.34692-0.3291-0.34998-0.85938-0.00708-1.18457l1.2431-1.17828c0.34326-0.32532,0.90277-0.32245,1.24969,0.00647l5.58582,5.29523
+                                L23,28.45837l-8.20038,7.77301c-0.35333,0.33508-0.92334,0.33801-1.27271,0.00671l-1.26569-1.19952
+                                c-0.34943-0.3313-0.34613-0.8714,0.00739-1.2063l5.7149-5.41711L12.39709,23.12036z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div id="loupeMeta"></div>
+                <ul class="lateral-nav">
+                    <li id="buttonPrev">
+                        <svg version="1.1" id="svgIconPrevLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                            </style>
+                            <path class="icon custom-colorable" d="M25.20105,14.76864l-8.2004,7.773l2.5314,2.3992l5.5858,5.2952c0.3469,0.3289,0.9064,0.3318,1.2497,0.0065
+                                l1.2431-1.1783c0.3429-0.3252,0.3398-0.8555-0.0071-1.1846l-5.5864-5.2948l5.7149-5.4171c0.3535-0.3349,0.3568-0.875,0.0074-1.2063
+                                l-1.2657-1.1995C26.12435,14.43064,25.55435,14.43354,25.20105,14.76864z"/>
+                        </svg>
+                    </li>
+                    <li class="count"><span id="countCurrent"></span> of <span id="countTotal"></span></li>
+                    <li id="buttonNext">
+                        <svg version="1.1" id="svgIconNextLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                            </style>
+                            <path class="icon custom-colorable" d="M19.79895,14.76864l8.2004,7.773l-2.5314,2.3992l-5.5858,5.2952c-0.3469,0.3289-0.9064,0.3318-1.2497,0.0065
+                                l-1.2431-1.1783c-0.3429-0.3252-0.3398-0.8555,0.0071-1.1846l5.5864-5.2948l-5.7149-5.4171
+                                c-0.3535-0.3349-0.3568-0.875-0.0074-1.2063l1.2657-1.1995C18.87565,14.43064,19.44565,14.43354,19.79895,14.76864z"/>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div id="loupeCloseButton">
+                <svg version="1.1" id="svgIconLoupeClose" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                    <path class="shape-x custom-colorable" d="M14.77881,17.30074l5.212,5.2222l-5.0831,5.0924c-0.3476,0.3484-0.5746,0.7624-0.2308,1.1067l1.5682,1.4763
+                        c0.3436,0.3443,0.8045,0.2596,1.1521-0.0886l5.0825-5.093l5.2119,5.222c0.3536,0.3547,0.9244,0.3578,1.2741,0.0073l1.2677-1.27
+                        c0.3497-0.3507,0.3465-0.9224-0.0071-1.2768l-5.2119-5.2221l5.0828-5.0925c0.3475-0.3485,0.5429-0.8259,0.1994-1.1702
+                        l-1.6474-1.4921c-0.3438-0.3443-0.6936-0.1803-1.0411,0.1679l-5.0828,5.0929l-5.212-5.222
+                        c-0.3537-0.3546-0.9241-0.3577-1.2742-0.007l-1.2672,1.2698C14.42171,16.37464,14.42491,16.94624,14.77881,17.30074z"/>
+                </svg>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var LR = LR || {};
+            LR.images = [                                                                                        {"id": "23839", "exportFilename": "1", "title": "", "caption" : ""},
+                         {"id": "23833", "exportFilename": "2", "title": "", "caption" : ""},
+                         {"id": "23828", "exportFilename": "3", "title": "", "caption" : ""},
+                         {"id": "23841", "exportFilename": "4", "title": "", "caption" : ""},
+                         {"id": "23831", "exportFilename": "5", "title": "", "caption" : ""},
+                         {"id": "23838", "exportFilename": "6", "title": "", "caption" : ""},
+                         {"id": "23830", "exportFilename": "7", "title": "", "caption" : ""},
+                         {"id": "23829", "exportFilename": "8", "title": "", "caption" : ""},
+                         {"id": "23837", "exportFilename": "9", "title": "", "caption" : ""},
+                         {"id": "23836", "exportFilename": "10", "title": "", "caption" : ""},
+                         {"id": "23827", "exportFilename": "11", "title": "", "caption" : ""},
+                         {"id": "23832", "exportFilename": "12", "title": "", "caption" : ""},
+                         {"id": "23826", "exportFilename": "13", "title": "", "caption" : ""},
+                         {"id": "23835", "exportFilename": "14", "title": "", "caption" : ""},
+                         {"id": "23834", "exportFilename": "15", "title": "", "caption" : ""},
+                         {"id": "23840", "exportFilename": "16", "title": "", "caption" : ""},
+                         {"id": "23853", "exportFilename": "17", "title": "", "caption" : ""},
+                         {"id": "23849", "exportFilename": "18", "title": "", "caption" : ""},
+                         {"id": "23842", "exportFilename": "19", "title": "", "caption" : ""},
+                         {"id": "23843", "exportFilename": "20", "title": "", "caption" : ""},
+                         {"id": "23852", "exportFilename": "21", "title": "", "caption" : ""},
+                         {"id": "23850", "exportFilename": "22", "title": "", "caption" : ""},
+                         {"id": "23846", "exportFilename": "23", "title": "", "caption" : ""},
+                         {"id": "23851", "exportFilename": "24", "title": "", "caption" : ""},
+                         {"id": "23848", "exportFilename": "25", "title": "", "caption" : ""},
+                         {"id": "23855", "exportFilename": "26", "title": "", "caption" : ""},
+                         {"id": "23854", "exportFilename": "27", "title": "", "caption" : ""},
+                         {"id": "23856", "exportFilename": "28", "title": "", "caption" : ""},
+                         {"id": "23857", "exportFilename": "29", "title": "", "caption" : ""},
+                         {"id": "23847", "exportFilename": "30", "title": "", "caption" : ""},
+                         {"id": "23845", "exportFilename": "31", "title": "", "caption" : ""},
+                         {"id": "23844", "exportFilename": "32", "title": "", "caption" : ""},
+                         {"id": "23865", "exportFilename": "33", "title": "", "caption" : ""},
+                         {"id": "23858", "exportFilename": "34", "title": "", "caption" : ""},
+                         {"id": "23869", "exportFilename": "35", "title": "", "caption" : ""},
+                         {"id": "23863", "exportFilename": "36", "title": "", "caption" : ""},
+                         {"id": "23859", "exportFilename": "37", "title": "", "caption" : ""},
+                         {"id": "23860", "exportFilename": "38", "title": "", "caption" : ""},
+                         {"id": "23864", "exportFilename": "39", "title": "", "caption" : ""},
+                         {"id": "23862", "exportFilename": "40", "title": "", "caption" : ""},
+                         {"id": "23866", "exportFilename": "41", "title": "", "caption" : ""},
+                         {"id": "23861", "exportFilename": "42", "title": "", "caption" : ""},
+                         {"id": "23870", "exportFilename": "43", "title": "", "caption" : ""},
+                         {"id": "23871", "exportFilename": "44", "title": "", "caption" : ""},
+                         {"id": "23868", "exportFilename": "45", "title": "", "caption" : ""},
+                         {"id": "23867", "exportFilename": "46", "title": "", "caption" : ""},
+                         {"id": "23872", "exportFilename": "47", "title": "", "caption" : ""},
+                         {"id": "23873", "exportFilename": "48", "title": "", "caption" : ""},
+                         {"id": "23877", "exportFilename": "49", "title": "", "caption" : ""},
+                         {"id": "23874", "exportFilename": "50", "title": "", "caption" : ""},
+                         {"id": "23883", "exportFilename": "51", "title": "", "caption" : ""},
+                         {"id": "23884", "exportFilename": "52", "title": "", "caption" : ""},
+                         {"id": "23878", "exportFilename": "53", "title": "", "caption" : ""},
+                         {"id": "23880", "exportFilename": "54", "title": "", "caption" : ""},
+                         {"id": "23875", "exportFilename": "55", "title": "", "caption" : ""},
+                         {"id": "23876", "exportFilename": "56", "title": "", "caption" : ""},
+                         {"id": "23879", "exportFilename": "57", "title": "", "caption" : ""},
+                         {"id": "23887", "exportFilename": "58", "title": "", "caption" : ""},
+                         {"id": "23888", "exportFilename": "59", "title": "", "caption" : ""},
+                         {"id": "23882", "exportFilename": "60", "title": "", "caption" : ""},
+                         {"id": "23881", "exportFilename": "61", "title": "", "caption" : ""},
+                         {"id": "23886", "exportFilename": "62", "title": "", "caption" : ""},
+                         {"id": "23796", "exportFilename": "63", "title": "", "caption" : ""},
+                         {"id": "23885", "exportFilename": "64", "title": "", "caption" : ""},
+                         {"id": "23889", "exportFilename": "65", "title": "", "caption" : ""},
+                         {"id": "23890", "exportFilename": "66", "title": "", "caption" : ""},
+                         {"id": "23892", "exportFilename": "67", "title": "", "caption" : ""},
+                         {"id": "23893", "exportFilename": "68", "title": "", "caption" : ""},
+                         {"id": "23894", "exportFilename": "69", "title": "", "caption" : ""},
+                         {"id": "23895", "exportFilename": "70", "title": "", "caption" : ""},
+                         {"id": "23891", "exportFilename": "71", "title": "", "caption" : ""},
+                         {"id": "23896", "exportFilename": "72", "title": "", "caption" : ""},
+                         {"id": "23897", "exportFilename": "73", "title": "", "caption" : ""},
+                         {"id": "23899", "exportFilename": "74", "title": "", "caption" : ""},
+                         {"id": "23898", "exportFilename": "75", "title": "", "caption" : ""},
+                         {"id": "23901", "exportFilename": "76", "title": "", "caption" : ""},
+                         {"id": "23903", "exportFilename": "77", "title": "", "caption" : ""},
+                         {"id": "23900", "exportFilename": "78", "title": "", "caption" : ""},
+                         {"id": "23902", "exportFilename": "79", "title": "", "caption" : ""},
+                         {"id": "23904", "exportFilename": "80", "title": "", "caption" : ""},
+                         {"id": "23905", "exportFilename": "81", "title": "", "caption" : ""},
+                         {"id": "23908", "exportFilename": "82", "title": "", "caption" : ""},
+                         {"id": "23906", "exportFilename": "83", "title": "", "caption" : ""},
+                         {"id": "23911", "exportFilename": "84", "title": "", "caption" : ""},
+                         {"id": "23907", "exportFilename": "85", "title": "", "caption" : ""},
+                         {"id": "23909", "exportFilename": "86", "title": "", "caption" : ""},
+                         {"id": "23910", "exportFilename": "87", "title": "", "caption" : ""},
+                         {"id": "23912", "exportFilename": "88", "title": "", "caption" : ""},
+                         {"id": "23913", "exportFilename": "89", "title": "", "caption" : ""},
+                         {"id": "23915", "exportFilename": "90", "title": "", "caption" : ""},
+                         {"id": "23914", "exportFilename": "91", "title": "", "caption" : ""},
+                         {"id": "23916", "exportFilename": "92", "title": "", "caption" : ""},
+                         {"id": "23923", "exportFilename": "93", "title": "", "caption" : ""},
+                         {"id": "23924", "exportFilename": "94", "title": "", "caption" : ""},
+                         {"id": "23920", "exportFilename": "95", "title": "", "caption" : ""},
+                         {"id": "23922", "exportFilename": "96", "title": "", "caption" : ""},
+                         {"id": "23917", "exportFilename": "97", "title": "", "caption" : ""},
+                         {"id": "23919", "exportFilename": "98", "title": "", "caption" : ""},
+                         {"id": "23918", "exportFilename": "99", "title": "", "caption" : ""},
+                         {"id": "23927", "exportFilename": "100", "title": "", "caption" : ""},
+                         {"id": "23921", "exportFilename": "101", "title": "", "caption" : ""},
+                         {"id": "23926", "exportFilename": "102", "title": "", "caption" : ""},
+                         {"id": "23925", "exportFilename": "103", "title": "", "caption" : ""},
+                         {"id": "23928", "exportFilename": "104", "title": "", "caption" : ""},
+                         {"id": "23929", "exportFilename": "105", "title": "", "caption" : ""},
+                         {"id": "23931", "exportFilename": "106", "title": "", "caption" : ""},
+                         {"id": "23930", "exportFilename": "107", "title": "", "caption" : ""},
+                         {"id": "23932", "exportFilename": "108", "title": "", "caption" : ""},
+                         {"id": "23934", "exportFilename": "109", "title": "", "caption" : ""},
+                         {"id": "23933", "exportFilename": "110", "title": "", "caption" : ""},
+                         {"id": "23797", "exportFilename": "2021-10-22_00.32.09", "title": "", "caption" : ""},
+                         {"id": "23798", "exportFilename": "2021-10-22_00.34.23", "title": "", "caption" : ""},
+                         {"id": "23799", "exportFilename": "2021-10-22_00.34.36", "title": "", "caption" : ""},
+                         {"id": "23800", "exportFilename": "2021-10-22_00.34.41", "title": "", "caption" : ""},
+                         {"id": "23801", "exportFilename": "2021-10-22_00.34.43", "title": "", "caption" : ""},
+                         {"id": "23802", "exportFilename": "2021-10-22_00.34.49", "title": "", "caption" : ""},
+                         {"id": "23803", "exportFilename": "2021-10-22_00.35.00", "title": "", "caption" : ""},
+                         {"id": "23804", "exportFilename": "2021-10-22_00.40.30", "title": "", "caption" : ""},
+                         {"id": "23805", "exportFilename": "2021-10-22_00.41.37", "title": "", "caption" : ""},
+                         {"id": "23806", "exportFilename": "2021-10-22_00.42.00", "title": "", "caption" : ""},
+                         {"id": "23807", "exportFilename": "2021-10-22_00.42.52", "title": "", "caption" : ""},
+                         {"id": "23808", "exportFilename": "2021-10-22_00.43.04", "title": "", "caption" : ""},
+                         {"id": "23809", "exportFilename": "2021-10-22_00.43.17", "title": "", "caption" : ""},
+                         {"id": "23810", "exportFilename": "2021-10-22_00.44.19", "title": "", "caption" : ""},
+                         {"id": "23811", "exportFilename": "2021-10-22_00.46.46", "title": "", "caption" : ""},
+                         {"id": "23812", "exportFilename": "2021-10-22_00.47.14", "title": "", "caption" : ""},
+                         {"id": "23813", "exportFilename": "2021-10-22_00.47.16", "title": "", "caption" : ""},
+                         {"id": "23814", "exportFilename": "2021-10-22_00.55.49", "title": "", "caption" : ""},
+                         {"id": "23815", "exportFilename": "2021-10-22_00.55.57", "title": "", "caption" : ""},
+                         {"id": "23816", "exportFilename": "2021-10-22_00.56.04", "title": "", "caption" : ""},
+                         {"id": "23817", "exportFilename": "2021-10-22_00.56.14", "title": "", "caption" : ""},
+                         {"id": "23818", "exportFilename": "2021-10-22_00.56.17", "title": "", "caption" : ""},
+                         {"id": "23819", "exportFilename": "2021-10-22_00.56.29", "title": "", "caption" : ""},
+                         {"id": "23820", "exportFilename": "2021-10-22_00.56.48", "title": "", "caption" : ""},
+                         {"id": "23821", "exportFilename": "2021-10-22_00.56.56", "title": "", "caption" : ""},
+                         {"id": "23822", "exportFilename": "2021-10-22_00.56.58", "title": "", "caption" : ""},
+                         {"id": "23823", "exportFilename": "2021-10-22_00.57.01", "title": "", "caption" : ""},
+                         {"id": "23824", "exportFilename": "2021-10-22_00.57.09", "title": "", "caption" : ""},
+                         {"id": "23825", "exportFilename": "2021-10-22_00.57.20", "title": "", "caption" : ""},
+                                    ]        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
